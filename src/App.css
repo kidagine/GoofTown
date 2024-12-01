@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-family: "Sequel100Black";
 }
 
 /* Content container with padding and no overflow */
@@ -29,7 +30,7 @@
 .Title {
   font-weight: bold;
   font-size: 150px;
-  letter-spacing: 33px;
+  letter-spacing: 15px;
   text-shadow: #000 0px 10px 1px;
 }
 
@@ -45,16 +46,18 @@
 
 .Showcase {
   width: 550px;
-  height: 330px;
+  height: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
 }
 
 .ShowcaseHeader {
-  height: 10px;
+  height: 30px;
   width: 100%;
+  background-color: blue;
 }
 
 .ShowcaseImage {
@@ -64,7 +67,7 @@
 }
 
 .ShowcaseButtons {
-  height: 10px;
+  height: 30px;
   width: 100%;
 }
 
