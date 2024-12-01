@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Sequel100Black";
+  src: local("Sequel100Black"),
+    url("./fonts/Sequel100Black-55.ttf") format("truetype");
+  font-weight: normal;
+}
