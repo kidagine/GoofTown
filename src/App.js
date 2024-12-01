@@ -12,13 +12,13 @@ function App() {
         </div>
 
         <div className="MiddleRow">
-          <Showcase />
-          <Showcase />
-          <Showcase />
+          <Showcase title={"Public Assets"} />
+          <Showcase title={"Games"} />
+          <Showcase title={"Contract Work"} />
         </div>
 
         <div className="BottomRow">
-
+          <div className="Button">Discord</div>
         </div>
       </div>
     </div>
