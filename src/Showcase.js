@@ -18,14 +18,18 @@ const Showcase = ({ title }) => {
             <div className="ShowcaseHeader">
                 <p>{title}</p>
             </div>
-            <div className="ShowcaseImage">
-                <iframe className="ShowcaseVideo"
-                    src="https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer"
-                    frameborder="0" allowfullscreen></iframe>
+            <div className="ShowcaseContent">
+                <div className="ShowcaseImage">
+                    <iframe className="ShowcaseVideo"
+                        src="https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div className="ShowcaseButtons">
+                    <div onClick={openPopup} className="CheckOutButton">Check Out</div>
+                    <div onClick={openPopup} className="InfoButton">Info</div>
+                </div>
             </div>
-            <div className="ShowcaseButtons">
-                <div onClick={openPopup} className="Button">Info</div>
-            </div>
+
             <VideoPopup isOpen={isPopupOpen} onClose={closePopup} videoSrc={videoSrc} />
         </div>
     );

@@ -18,7 +18,7 @@ function App() {
         </div>
 
         <div className="BottomRow">
-          <div className="Button">Discord</div>
+          {/* <div className="Button">Discord</div> */}
         </div>
       </div>
     </div>

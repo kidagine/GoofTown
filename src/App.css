@@ -1,5 +1,7 @@
 .MainContainer {
-  background-color: #272727;
+  background: linear-gradient(48deg, rgb(34, 36, 37) 0%, rgb(33, 34, 34) 46%, rgb(36, 37, 37) 52%, rgb(36, 36, 37) 100%);
+  /* Animation for gradient movement */
+  /* Increase the size of the gradient */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,6 +10,8 @@
   color: #fff;
   font-family: "Sequel100Black";
 }
+
+
 
 .ContentContainer {
   height: calc(100% - 60px);
@@ -46,6 +50,7 @@
 
 .Button {
   width: 100%;
+  height: 100%;
   background-color: red;
 }
 
