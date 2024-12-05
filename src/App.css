@@ -1,7 +1,7 @@
 .MainContainer {
   background: linear-gradient(48deg, rgb(34, 36, 37) 0%, rgb(33, 34, 34) 46%, rgb(36, 37, 37) 52%, rgb(36, 36, 37) 100%);
-  /* Animation for gradient movement */
-  /* Increase the size of the gradient */
+  background-size: 400% 400%;
+  animation: gradientAnimation 14s ease infinite;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -11,7 +11,19 @@
   font-family: "Sequel100Black";
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
 
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .ContentContainer {
   height: calc(100% - 60px);
