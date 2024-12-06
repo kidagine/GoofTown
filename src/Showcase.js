@@ -3,7 +3,7 @@ import VideoPopup from './VideoPopup.js';
 import { useState } from 'react';
 import './Showcase.css';
 
-const Showcase = ({ title }) => {
+const Showcase = ({ title, data }) => {
     const videoSrc = 'https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer'; // Replace with your video source
     const [isPopupOpen, setPopupOpen] = useState(false);
     const closePopup = () => {
@@ -15,16 +15,39 @@ const Showcase = ({ title }) => {
     const openInNewTab = (url) => {
         window.open("https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer", "_blank", "noreferrer");
     };
+    const [style, setStyle] = useState({ display: 'none' });
+    const [index, setIndex] = useState(0);
+
+    const getImage = (imageCode) => {
+
+        try {
+            return require(`../src/images/${imageCode}.png`);
+        } catch (error) {
+            console.error(`Image with code ${imageCode} not found.`);
+        }
+    };
+
     return (
         <div className="Showcase">
             <div className="ShowcaseHeader">
                 <p>{title}</p>
             </div>
-            <div className="ShowcaseContent">
+            <div className="ShowcaseContent"
+                onMouseEnter={e => {
+                    setStyle({ display: 'block' });
+                }}
+                onMouseLeave={e => {
+                    setStyle({ display: 'none' })
+                }}>
                 <div className="ShowcaseImage">
-                    <iframe className="ShowcaseVideo"
-                        src="https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer"
-                        frameborder="0" allowfullscreen></iframe>
+                    {data.length > 1 &&
+                        <div className="ShowcaseButtonLeft" onClick={() => setIndex(index - 1)} style={style}>sss</div>
+                    }
+                    <img
+                        className="ShowcaseVideo"
+                        src={getImage(data[index].image)}
+                        frameborder="0" allowfullscreen>
+                    </img>
                 </div>
                 <div className="ShowcaseButtons">
                     <div onClick={openInNewTab} className="CheckOutButton">Check Out</div>
@@ -33,7 +56,7 @@ const Showcase = ({ title }) => {
             </div>
 
             <VideoPopup isOpen={isPopupOpen} onClose={closePopup} videoSrc={videoSrc} />
-        </div>
+        </div >
     );
 };
 

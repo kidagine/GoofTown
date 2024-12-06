@@ -14,7 +14,7 @@ const VideoPopup = ({ isOpen, onClose, videoSrc }) => {
                 </div>
             </div>
             <div className="video-popup-content" onClick={(e) => e.stopPropagation()}>
-                <iframe width="1050" height="650" frameborder="0" scrolling="no"
+                <iframe width="1050" height="635" frameborder="0" scrolling="no"
                     src={videoSrc}
                 ></iframe>
             </div>

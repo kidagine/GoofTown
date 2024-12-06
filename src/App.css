@@ -91,9 +91,9 @@
 
 .DiscordButton {
   width: 200px;
-  height: 50px;
+  height: 45px;
   font-size: 16px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -115,7 +115,7 @@
 }
 
 .ContactContainer {
-  width: 400px;
+  width: 500px;
   height: 200px;
   border-radius: 15px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), 6px 6px 12px rgba(0, 0, 0, 0.7);
@@ -124,12 +124,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  text-align: center;
+}
+
+.InformationContainer {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  text-align: end;
+  margin-top: 20px;
 }
 
 .ContactButton {
-  width: 80%;
+  width: 60%;
   height: 50px;
   font-size: 16px;
   margin-top: 20px;
@@ -151,4 +163,18 @@
   background-color: #fff;
   border: 2px solid #272727;
   color: #272727;
+}
+
+.KiddoLogoImg {
+  width: 80px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), 6px 6px 12px rgba(0, 0, 0, 0.7);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.KiddoLogo:hover {
+  scale: 1.02;
 }
