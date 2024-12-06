@@ -18,7 +18,18 @@ function App() {
         </div>
 
         <div className="BottomRow">
-          {/* <div className="Button">Discord</div> */}
+          <div className="MediaContainer">
+            <p>For quick and open discussions:</p>
+            <button className="DiscordButton">Discord</button>
+          </div>
+          <div className="ContactContainer">
+            <p>If you want to discuss further then you can contact here:</p>
+            <button className="ContactButton">Contact</button>
+          </div>
+          <div className="ContactContainer">
+            <p>If you want to discuss further then you can contact here:</p>
+            <button className="ContactButton">Contact</button>
+          </div>
         </div>
       </div>
     </div>

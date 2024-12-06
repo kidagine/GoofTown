@@ -12,7 +12,9 @@ const Showcase = ({ title }) => {
     const openPopup = () => {
         setPopupOpen(true);
     };
-
+    const openInNewTab = (url) => {
+        window.open("https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer", "_blank", "noreferrer");
+    };
     return (
         <div className="Showcase">
             <div className="ShowcaseHeader">
@@ -25,7 +27,7 @@ const Showcase = ({ title }) => {
                         frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div className="ShowcaseButtons">
-                    <div onClick={openPopup} className="CheckOutButton">Check Out</div>
+                    <div onClick={openInNewTab} className="CheckOutButton">Check Out</div>
                     <div onClick={openPopup} className="InfoButton">Info</div>
                 </div>
             </div>
