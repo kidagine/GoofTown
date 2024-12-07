@@ -2,8 +2,6 @@ import React from 'react';
 import VideoPopup from './VideoPopup.js';
 import { useState } from 'react';
 import './Showcase.css';
-import LeftArrow from './images/Arrow.png'
-import RightArrow from './images/Arrow.png'
 
 
 const Showcase = ({ title, data }) => {

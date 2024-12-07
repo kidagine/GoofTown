@@ -68,6 +68,7 @@ function App() {
 
         <div className="TopRow">
           <p className="Title">GOOFTOWN INC.</p>
+          <p className="TitleInfo">Developing assets, tools, apps, games and anything inbetween.</p>
         </div>
 
         <div className="MiddleRow">

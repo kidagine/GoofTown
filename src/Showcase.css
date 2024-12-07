@@ -48,6 +48,13 @@
     width: 50px;
     cursor: pointer;
     font-size: 20px;
+    text-align: center;
+    background-color: #272727;
+    transition: 0.3s;
+}
+
+.ShowcaseButton:hover {
+    background-color: #303030;
 }
 
 .ShowcaseButtons {
@@ -59,9 +66,8 @@
     justify-content: space-between;
 }
 
-.InfoButton,
 .CheckOutButton {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
