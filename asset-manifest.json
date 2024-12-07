@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/GoofTown/static/css/main.f855e6bc.css",
-    "main.js": "/GoofTown/static/js/main.ebab2ad5.js",
+    "main.css": "/GoofTown/static/css/main.e105256b.css",
+    "main.js": "/GoofTown/static/js/main.e783adc4.js",
     "static/js/453.92d12cad.chunk.js": "/GoofTown/static/js/453.92d12cad.chunk.js",
-    "static/media/logo.svg": "/GoofTown/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Kiddo.png": "/GoofTown/static/media/Kiddo.68129485b598308293d3.png",
+    "static/media/Sequel100Black-55.ttf": "/GoofTown/static/media/Sequel100Black-55.0fcfc4e507ff03dbd933.ttf",
     "index.html": "/GoofTown/index.html",
-    "main.f855e6bc.css.map": "/GoofTown/static/css/main.f855e6bc.css.map",
-    "main.ebab2ad5.js.map": "/GoofTown/static/js/main.ebab2ad5.js.map",
+    "main.e105256b.css.map": "/GoofTown/static/css/main.e105256b.css.map",
+    "main.e783adc4.js.map": "/GoofTown/static/js/main.e783adc4.js.map",
     "453.92d12cad.chunk.js.map": "/GoofTown/static/js/453.92d12cad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.ebab2ad5.js"
+    "static/css/main.e105256b.css",
+    "static/js/main.e783adc4.js"
   ]
 }
