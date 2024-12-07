@@ -55,27 +55,29 @@ const Showcase = ({ title, data }) => {
                 onMouseLeave={e => {
                     setStyle({ display: 'none' })
                 }}>
-                <div className="ShowcaseImage">
-                    {data.length > 1 &&
+                <div className="ShowcaseImage fade">
+                    {/* {data.length > 1 &&
                         <img className="ShowcaseButtonLeft" src={LeftArrow} onClick={decreaseIndex} style={style}></img>
                     }
                     {data.length > 1 &&
                         <img className="ShowcaseButtonRight" src={RightArrow} onClick={addIndex} style={style}></img>
-                    }
-                    <img
+                    } */}
+                    <img onClick={openPopup}
                         className="ShowcaseVideo"
                         src={data[index].image}
                         frameborder="0" >
                     </img>
                 </div>
                 <div className="ShowcaseButtons">
+                    <div className="ShowcaseButton" onClick={decreaseIndex}>❮</div>
                     <div className="CheckOutButton">{data[index].title}</div>
-                    {data[index].noContent &&
+                    <div className="ShowcaseButton" onClick={addIndex}>❯</div>
+                    {/* {data[index].noContent &&
                         <div className="InfoButtonDisabled">Info</div>
-                    }
-                    {!data[index].noContent &&
+                    } */}
+                    {/* {!data[index].noContent &&
                         <div onClick={openPopup} className="InfoButton">Info</div>
-                    }
+                    } */}
                 </div>
             </div>
 

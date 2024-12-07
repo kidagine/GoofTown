@@ -28,30 +28,26 @@
 .ShowcaseImage {
     width: 100%;
     height: 310px;
-}
-
-.ShowcaseButtonLeft {
-    height: 150px;
-    width: 50px;
-    cursor: pointer;
-    background-color: #000;
-    position: absolute;
-    margin-top: 80px;
-}
-
-.ShowcaseButtonRight {
-    height: 150px;
-    width: 50px;
-    cursor: pointer;
-    background-color: #ffffff;
-    position: absolute;
-    margin-left: 500px;
-    margin-top: 80px;
+    overflow: hidden;
 }
 
 .ShowcaseVideo {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ShowcaseVideo:hover {
+    scale: 1.1;
+}
+
+.ShowcaseButton {
+    width: 10%;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .ShowcaseButtons {
@@ -65,7 +61,7 @@
 
 .InfoButton,
 .CheckOutButton {
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -97,4 +93,19 @@
     color: #666666;
     background-color: rgb(0, 0, 0);
     font-size: 15px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
