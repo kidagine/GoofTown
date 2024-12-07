@@ -15,24 +15,19 @@ function App() {
   const publicAssets = [
     {
       title: "RetroTopDown Template",
-      description: "RetroTopDownTemplate is asdadasdasa",
+      description: "RetroTopDown Template is a template for building top down games in the Unity Engine. Includes all the player controls, room systems and general mechanics with some art assets to get started",
       video: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer",
-      image: "RetroTopDownTemplate",
-    },
-    {
-      title: "Public Assets",
-      description: "",
-      video: "",
-      image: "TEST",
+      image: "https://lh3.googleusercontent.com/d/1Q07pbWQDLyu3z0hCofCX9nF6JQeJeRPU=s500?authuser=0",
+      url: "https://gamejolt.com/games/darklings/640842"
     },
   ];
   const games = [
     {
-      title: "To be announced",
-      description: "empty",
-      video: "",
-      image: "InWorks",
-      noContent: true,
+      title: "Darklings",
+      description: "A free easy to play fighting game with custom rollback netcode",
+      video: "https://www.youtube.com/embed/ouh34A0fY4k?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/1HXQU0vQEZ26vUBAH1c19xNetevG39OxA=s500?authuser=0",
+      url: "https://gamejolt.com/games/darklings/640842"
     }
   ];
   const contractWork = [
@@ -40,14 +35,29 @@ function App() {
       title: "FreeJack Online",
       description: "RetroTopDownTemplate is a",
       video: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer",
-      image: "RetroTopDownTemplate",
+      image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
       url: "https://store.steampowered.com/app/2629170/FreeJack_Online/"
     },
     {
-      title: "Public Assets",
-      description: "",
-      video: "",
-      image: "TEST",
+      title: "Amper App",
+      description: "RetroTopDownTemplate is a",
+      video: "https://www.youtube.com/embed/3k3EDoz13SY?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
+      url: "https://amper.dk"
+    },
+    {
+      title: "Scrum Noire",
+      description: "RetroTopDownTemplate is a",
+      video: "https://www.youtube.com/embed/12Zkbt5zNKA?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
+      url: "https://amper.dk"
+    },
+    {
+      title: "Oniri",
+      description: "A photorealistic metaverse for e commerce and collaboration with customers and clients.",
+      video: "https://www.youtube.com/embed/rQFbL75l7dk?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/1Y_SluOBqnB7herY_Q5mpTJ2I89ebs93G=s500?authuser=0",
+      url: "https://www.youtube.com/watch?v=rQFbL75l7dk"
     },
   ];
 
@@ -71,7 +81,7 @@ function App() {
             <button className="DiscordButton" onClick={openDiscord}>Discord</button>
           </div>
           <div className="ContactContainer">
-            <p>If you want to discuss further then you can<br />click right here:</p>
+            <p>If you want to discuss further then you can<br />directly contact here:</p>
             <button className="ContactButton" onClick={openEmail}>Contact</button>
           </div>
           <div className="InformationContainer" onClick={openGithub}>

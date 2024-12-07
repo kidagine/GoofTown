@@ -2,6 +2,9 @@ import React from 'react';
 import VideoPopup from './VideoPopup.js';
 import { useState } from 'react';
 import './Showcase.css';
+import LeftArrow from './images/Arrow.png'
+import RightArrow from './images/Arrow.png'
+
 
 const Showcase = ({ title, data }) => {
     const videoSrc = 'https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer'; // Replace with your video source
@@ -17,12 +20,24 @@ const Showcase = ({ title, data }) => {
     const [index, setIndex] = useState(0);
 
     const getImage = (imageCode) => {
-
         try {
             return require(`../src/images/${imageCode}.png`);
         } catch (error) {
             console.error(`Image with code ${imageCode} not found.`);
         }
+    };
+
+    const addIndex = () => {
+        if (index + 1 > data.length - 1)
+            setIndex(0)
+        else
+            setIndex(index + 1)
+    };
+    const decreaseIndex = () => {
+        if (index - 1 < 0)
+            setIndex(data.length - 1)
+        else
+            setIndex(index - 1)
     };
 
     return (
@@ -39,12 +54,15 @@ const Showcase = ({ title, data }) => {
                 }}>
                 <div className="ShowcaseImage">
                     {data.length > 1 &&
-                        <div className="ShowcaseButtonLeft" onClick={() => setIndex(index - 1)} style={style}>sss</div>
+                        <img className="ShowcaseButtonLeft" src={LeftArrow} onClick={decreaseIndex} style={style}></img>
+                    }
+                    {data.length > 1 &&
+                        <img className="ShowcaseButtonRight" src={RightArrow} onClick={decreaseIndex} style={style}></img>
                     }
                     <img
                         className="ShowcaseVideo"
-                        src={getImage(data[index].image)}
-                        frameborder="0" allowfullscreen>
+                        src={data[index].image}
+                        frameborder="0" >
                     </img>
                 </div>
                 <div className="ShowcaseButtons">

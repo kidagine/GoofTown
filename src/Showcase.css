@@ -20,6 +20,7 @@
     width: calc(100% - 6px);
     border-radius: 15px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), 6px 6px 12px rgba(0, 0, 0, 0.7);
+    white-space: pre-line;
 }
 
 .ShowcaseImage {
@@ -28,20 +29,27 @@
 }
 
 .ShowcaseButtonLeft {
-    height: 50px;
+    height: 150px;
     width: 50px;
     cursor: pointer;
-    background-color: red;
+    background-color: #000;
     position: absolute;
+    margin-top: 80px;
 }
 
 .ShowcaseButtonRight {
-    height: 50px;
+    height: 150px;
     width: 50px;
     cursor: pointer;
-    background-color: red;
+    background-color: #ffffff;
     position: absolute;
     margin-left: 500px;
+    margin-top: 80px;
+}
+
+.ShowcaseVideo {
+    max-width: 100%;
+    height: auto;
 }
 
 .ShowcaseButtons {
