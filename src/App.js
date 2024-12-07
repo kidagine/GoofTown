@@ -24,7 +24,7 @@ function App() {
   const games = [
     {
       title: "Darklings",
-      description: "A free easy to play fighting game with custom rollback netcode",
+      description: "A free easy to play fighting game with custom rollback netcode, featuring multiple characters/stages with all of the standard fighting game features.",
       video: "https://www.youtube.com/embed/ouh34A0fY4k?enablejsapi=1&version=3&playerapiid=ytplayer",
       image: "https://lh3.googleusercontent.com/d/1HXQU0vQEZ26vUBAH1c19xNetevG39OxA=s500?authuser=0",
       url: "https://gamejolt.com/games/darklings/640842"
@@ -33,32 +33,33 @@ function App() {
   const contractWork = [
     {
       title: "FreeJack Online",
-      description: "RetroTopDownTemplate is a",
+      description: "FreeJack Online is a big F2P racing game with parkour elements and online play. Worked on level design, core game mechanics, multiplayer functionality and UI.",
       video: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer",
       image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
       url: "https://store.steampowered.com/app/2629170/FreeJack_Online/"
     },
     {
-      title: "Amper App",
-      description: "RetroTopDownTemplate is a",
-      video: "https://www.youtube.com/embed/3k3EDoz13SY?enablejsapi=1&version=3&playerapiid=ytplayer",
-      image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
-      url: "https://amper.dk"
+      title: "Oniri",
+      description: "A photorealistic metaverse for e commerce and collaboration with customers and clients. Integrated the desktop port, as well as the UI visuals and functionality and real time cloud asset streaming.",
+      video: "https://www.youtube.com/embed/rQFbL75l7dk?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/1Wzp6edYBJkEIUDLhJ4L4TVXQ_l27vumf=s500?authuser=0",
+      url: "https://www.youtube.com/watch?v=rQFbL75l7dk"
     },
     {
       title: "Scrum Noire",
-      description: "RetroTopDownTemplate is a",
+      description: "An immversive play experience to teach companies the properties and methods of the Scrum Methodology through interactive means.",
       video: "https://www.youtube.com/embed/12Zkbt5zNKA?enablejsapi=1&version=3&playerapiid=ytplayer",
-      image: "https://lh3.googleusercontent.com/d/1PXPTfZ0EuELCx3MOu8LAf8NWJpw32Ylu=s500?authuser=0",
+      image: "https://lh3.googleusercontent.com/d/1vhlQJRjXtxKyk2CFkZgcN30GW3wpVCCI=s500?authuser=0",
       url: "https://amper.dk"
     },
     {
-      title: "Oniri",
-      description: "A photorealistic metaverse for e commerce and collaboration with customers and clients.",
-      video: "https://www.youtube.com/embed/rQFbL75l7dk?enablejsapi=1&version=3&playerapiid=ytplayer",
-      image: "https://lh3.googleusercontent.com/d/1Y_SluOBqnB7herY_Q5mpTJ2I89ebs93G=s500?authuser=0",
-      url: "https://www.youtube.com/watch?v=rQFbL75l7dk"
+      title: "Amper App",
+      description: "App and Website with account management, allowing users to view cards that are loaded dynamically based on the account, each card teaches the user a new methodology for handling a company.",
+      video: "https://www.youtube.com/embed/3k3EDoz13SY?enablejsapi=1&version=3&playerapiid=ytplayer",
+      image: "https://lh3.googleusercontent.com/d/17RkmsGTE73Is27JD0M-kBxJefUtXxqYK=s500?authuser=0",
+      url: "https://amper.dk"
     },
+
   ];
 
   return (

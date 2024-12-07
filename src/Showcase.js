@@ -26,7 +26,9 @@ const Showcase = ({ title, data }) => {
             console.error(`Image with code ${imageCode} not found.`);
         }
     };
-
+    setTimeout(() => {
+        addIndex();
+    }, 8000);
     const addIndex = () => {
         if (index + 1 > data.length - 1)
             setIndex(0)
@@ -44,6 +46,7 @@ const Showcase = ({ title, data }) => {
         <div className="Showcase">
             <div className="ShowcaseHeader">
                 <p>{title}</p>
+                <p>{index + 1}/{data.length}</p>
             </div>
             <div className="ShowcaseContent"
                 onMouseEnter={e => {
@@ -57,7 +60,7 @@ const Showcase = ({ title, data }) => {
                         <img className="ShowcaseButtonLeft" src={LeftArrow} onClick={decreaseIndex} style={style}></img>
                     }
                     {data.length > 1 &&
-                        <img className="ShowcaseButtonRight" src={RightArrow} onClick={decreaseIndex} style={style}></img>
+                        <img className="ShowcaseButtonRight" src={RightArrow} onClick={addIndex} style={style}></img>
                     }
                     <img
                         className="ShowcaseVideo"
