@@ -86,8 +86,8 @@ function App() {
             <p>If you want to discuss further then you can<br />directly contact here:</p>
             <button className="ContactButton" onClick={openEmail}>Contact</button>
           </div>
-          <div className="InformationContainer" onClick={openGithub}>
-            <img
+          <div className="InformationContainer" >
+            <img onClick={openGithub}
               className="KiddoLogoImg"
               src={Kiddo}
               frameborder="0" allowfullscreen>
