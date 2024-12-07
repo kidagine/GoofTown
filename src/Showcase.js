@@ -12,9 +12,7 @@ const Showcase = ({ title, data }) => {
     const openPopup = () => {
         setPopupOpen(true);
     };
-    const openInNewTab = (url) => {
-        window.open("https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer", "_blank", "noreferrer");
-    };
+
     const [style, setStyle] = useState({ display: 'none' });
     const [index, setIndex] = useState(0);
 
@@ -50,12 +48,17 @@ const Showcase = ({ title, data }) => {
                     </img>
                 </div>
                 <div className="ShowcaseButtons">
-                    <div onClick={openInNewTab} className="CheckOutButton">Check Out</div>
-                    <div onClick={openPopup} className="InfoButton">Info</div>
+                    <div className="CheckOutButton">{data[index].title}</div>
+                    {data[index].noContent &&
+                        <div className="InfoButtonDisabled">Info</div>
+                    }
+                    {!data[index].noContent &&
+                        <div onClick={openPopup} className="InfoButton">Info</div>
+                    }
                 </div>
             </div>
 
-            <VideoPopup isOpen={isPopupOpen} onClose={closePopup} videoSrc={videoSrc} />
+            <VideoPopup isOpen={isPopupOpen} onClose={closePopup} data={data[index]} />
         </div >
     );
 };

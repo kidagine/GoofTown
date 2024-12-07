@@ -14,27 +14,39 @@ function App() {
   };
   const publicAssets = [
     {
-      title: "Public Assets",
+      title: "RetroTopDown Template",
+      description: "RetroTopDownTemplate is asdadasdasa",
+      video: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer",
       image: "RetroTopDownTemplate",
     },
     {
       title: "Public Assets",
+      description: "",
+      video: "",
       image: "TEST",
     },
   ];
   const games = [
     {
-      title: "Public Assets",
-      image: "RetroTopDownTemplate",
+      title: "To be announced",
+      description: "empty",
+      video: "",
+      image: "InWorks",
+      noContent: true,
     }
   ];
   const contractWork = [
     {
-      title: "Public Assets",
+      title: "FreeJack Online",
+      description: "RetroTopDownTemplate is a",
+      video: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1&version=3&playerapiid=ytplayer",
       image: "RetroTopDownTemplate",
+      url: "https://store.steampowered.com/app/2629170/FreeJack_Online/"
     },
     {
       title: "Public Assets",
+      description: "",
+      video: "",
       image: "TEST",
     },
   ];
